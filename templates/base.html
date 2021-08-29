@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PagesProject</title>
+    <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Home</a>
+        <span style="font-size: 1.5em">|</span>
+        <a href="{% url 'about' %}">About</a>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
